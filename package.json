@@ -1,0 +1,17 @@
+{
+  "name": "rtc-intercept",
+  "version": "0.1.0",
+  "description": "Terminal app that joins a VDO.Ninja room and records each guest's audio to a separate high-quality file.",
+  "type": "commonjs",
+  "bin": {
+    "intercept": "./bin/intercept.js"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "start": "node bin/intercept.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  },
+  "license": "MIT"
+}
